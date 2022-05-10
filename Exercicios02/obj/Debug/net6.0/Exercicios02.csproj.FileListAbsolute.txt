@@ -1,0 +1,5 @@
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Exercicios02\obj\Debug\net6.0\Exercicios02.csproj.AssemblyReference.cache
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Exercicios02\obj\Debug\net6.0\Exercicios02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Exercicios02\obj\Debug\net6.0\Exercicios02.AssemblyInfoInputs.cache
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Exercicios02\obj\Debug\net6.0\Exercicios02.AssemblyInfo.cs
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Exercicios02\obj\Debug\net6.0\Exercicios02.csproj.CoreCompileInputs.cache

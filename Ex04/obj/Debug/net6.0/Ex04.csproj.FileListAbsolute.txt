@@ -1,0 +1,15 @@
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\bin\Debug\net6.0\Ex04.exe
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\bin\Debug\net6.0\Ex04.deps.json
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\bin\Debug\net6.0\Ex04.runtimeconfig.json
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\bin\Debug\net6.0\Ex04.dll
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\bin\Debug\net6.0\Ex04.pdb
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.csproj.AssemblyReference.cache
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.AssemblyInfoInputs.cache
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.AssemblyInfo.cs
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.csproj.CoreCompileInputs.cache
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.dll
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\refint\Ex04.dll
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.pdb
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\Ex04.genruntimeconfig.cache
+C:\Users\davi-\Documents\workspace\Backend C#\Exercicios02\Ex04\obj\Debug\net6.0\ref\Ex04.dll
