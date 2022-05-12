@@ -16,6 +16,7 @@ namespace Ex01.src
             VerificaEstadoCivil(estadoCivil);
             VerificaDependentes(dependentes);
         }
+
         public bool VerificaNome(string nome)
         {
             if (nome.Length < 5)
