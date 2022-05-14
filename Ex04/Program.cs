@@ -15,7 +15,7 @@ if (c == 'S' || c == 's')
     DateTime dataEmissao = DateTime.Parse(Console.ReadLine());
 
     pessoa = new Pessoa(nome);
-    certidaoNascimento = new CertidaoNascimento(dataEmissao, pessoa);
+    certidaoNascimento = new CertidaoNascimento(pessoa, dataEmissao);
     pessoa = new Pessoa(nome, certidaoNascimento);
 } else
 {

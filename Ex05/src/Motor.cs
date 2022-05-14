@@ -9,40 +9,28 @@ namespace Ex05.src
     internal class Motor
     {
         private double cilindrada;
-        
-        public double Cilindrada { get { return cilindrada; } set { } }
+
+        public double Cilindrada { get { return cilindrada; } set { cilindrada = value; } }
 
         public Carro Carro { get; set; }
 
-        public Motor(double cilindrada, Carro carro)
-        {
-            if(carro.Motor != null)
-            {
-                throw new Exception("Não pode ter mais de um motor");
-            }
-
-            this.cilindrada = cilindrada;
-        }
-
         public Motor(double cilindrada)
         {
-            this.cilindrada = cilindrada;
+            if (cilindrada <= 0)
+            {
+                throw new ArgumentException("Cilindrada deve ser maior que zero");
+            }
+            this.Cilindrada = cilindrada;
         }
 
-        public void VelocidadeMaxima(Carro carro)
+        public Motor(double cilindrada, Carro carro)
         {
-            if(carro.Motor.Cilindrada <= 1.0)
+            if (cilindrada <= 0)
             {
-                Console.WriteLine("\nVelocidade máxima do carro é 140 km/h");
+                throw new ArgumentException("Cilindrada deve ser maior que zero");
             }
-            else if (carro.Motor.Cilindrada <= 1.6)
-            {
-                Console.WriteLine("\nVelocidade máxima do carro é 180 km/h");
-            }
-            else if (carro.Motor.Cilindrada <= 2.0)
-            {
-                Console.WriteLine("\nVelocidade máxima do carro é 220 km/h");
-            }
+            this.Cilindrada = cilindrada;
+            this.Carro = carro;
         }
     }
 }

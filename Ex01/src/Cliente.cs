@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex01.src
 {
-    public class Cliente
+    class Cliente
     {
         public string nome { get; set; }
         public string cpf { get; set; }
@@ -31,6 +31,16 @@ namespace Ex01.src
 
         public Cliente()
         {
+        }
+
+        public void imprimeDados()
+        {
+            Console.WriteLine("Nome: " + nome);
+            Console.WriteLine("CPF: " + cpf);
+            Console.WriteLine("Data de Nascimento: " + dataNascimento);
+            Console.WriteLine("Renda Mensal: " + rendaMensal);
+            Console.WriteLine("Estado Civil: " + estadoCivil);
+            Console.WriteLine("Dependentes: " + dependentes);
         }
     }
 }

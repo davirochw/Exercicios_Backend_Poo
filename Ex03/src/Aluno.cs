@@ -9,18 +9,20 @@ namespace Ex03.src
     internal class Aluno
     {
         private string nome;
-        private int matricula;
-        Random randNum = new Random();
 
-        public string Nome { get { return nome; } }
-        public int Matricula { get { return matricula; } }
+        public Random matricula = new Random();
+        public string Nome { get { return nome; } set { nome = value; } }
 
-        public Turma Turma { get { return Turma; } }
+        public List<Turma> turmas = new List<Turma>();
 
         public Aluno(string nome)
         {
             this.nome = nome;
-            this.matricula = randNum.Next(100000, 999999);         
+        }
+
+        public int Matricula()
+        {
+            return matricula.Next(1, 1000);
         }
     }
 }

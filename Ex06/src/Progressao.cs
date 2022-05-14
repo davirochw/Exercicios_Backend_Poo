@@ -13,13 +13,20 @@ namespace Ex06.src
 
         public abstract int ProximoValor { get; }
 
-        public Progressao()
+        public Progressao(int primeiro, int razao)
         {
-
+            Primeiro = primeiro;
+            Razao = razao;
         }
 
-        public abstract int TermoAt(int posicao);
+        public abstract int TermoAt(int posicao)
+        {
+            return Primeiro + Razao * posicao;
+        }
 
-        /*public void Reinicializar() { }*/
+        public void Reinicializar()
+        {
+            Primeiro = 0;
+        }
     }
 }

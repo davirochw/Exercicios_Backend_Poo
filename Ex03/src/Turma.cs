@@ -10,9 +10,10 @@ namespace Ex03.src
     {
         private string codigo;
 
-        public string Codigo { get { return codigo; } set { codigo = value;} }
-        public List<Aluno> Alunos { get; set; } = new List<Aluno>();
-        
+        public string Codigo { get { return codigo; } set { codigo = value; } }
+
+        public List<Aluno> alunos = new List<Aluno>();
+
         public Turma(string codigo)
         {
             this.codigo = codigo;

@@ -19,7 +19,7 @@ while (n > 0)
     Console.Write("Digite a renda mensal do cliente: ");
     string rendaMensal = (Console.ReadLine());
 
-    Console.Write("Digite o estado civil do cliente: [S, C, V, D]");
+    Console.Write("Digite o estado civil do cliente: [S, C, V, D] ");
     string estadoCivil = (Console.ReadLine());
 
     Console.Write("Digite o número de dependentes do cliente: ");
@@ -28,6 +28,6 @@ while (n > 0)
     n--;
 
     Cliente cliente1 = new Cliente(nome, cpf, dataNascimento, rendaMensal, estadoCivil, dependentes);
+    Console.WriteLine();
+    cliente1.imprimeDados();
 }
-
-Console.WriteLine("Cliente(s) adicionado(s) com sucesso!");

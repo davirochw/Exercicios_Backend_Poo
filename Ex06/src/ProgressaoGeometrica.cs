@@ -8,12 +8,15 @@ namespace Ex06.src
 {
     internal class ProgressaoGeometrica : Progressao
     {
-        private List<int> Pa { get; set; } = new List<int>();
-        public override int ProximoValor => throw new NotImplementedException();
+        public int Primeiro { get; set; }
+        public int Razao { get; set; }
 
-        public override int TermoAt(int posicao)
+        private List<int> PG = new List<int>();
+
+        public ProgressaoGeometrica(int primeiro, int razao) : base(primeiro, razao)
         {
-            throw new NotImplementedException();
+            Primeiro = primeiro;
+            Razao = razao;
         }
     }
 }

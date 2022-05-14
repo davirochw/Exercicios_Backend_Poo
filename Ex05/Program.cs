@@ -16,4 +16,4 @@ motor = new Motor(cilindrada);
 
 carro = new Carro(placa, modelo, motor);
 
-motor.VelocidadeMaxima(carro);
+carro.VelocidadeMaxima(carro);

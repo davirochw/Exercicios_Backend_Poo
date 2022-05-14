@@ -9,22 +9,31 @@ namespace Ex04.src
     internal class Pessoa
     {
         private string nome;
-        private CertidaoNascimento certidaoNascimento;
+
         public string Nome { get { return nome; } set { nome = value; } }
-        public CertidaoNascimento CertidaoNascimento { get { return certidaoNascimento; } 
-            private set { if(certidaoNascimento != null) 
-                { throw new Exception("Não pode ter mais de uma certidão."); 
-                } certidaoNascimento = value; } }
+
+        public CertidaoNascimento CertidaoNascimento { get; set; }
 
         public Pessoa(string nome, CertidaoNascimento certidaoNascimento)
         {
-            this.nome = nome;
-            this.certidaoNascimento = certidaoNascimento;
+            if (nome == null)
+            {
+                throw new ArgumentNullException("Precisa de um nome para a pessoa");
+            }
+            if (certidaoNascimento == null)
+            {
+                throw new ArgumentNullException("Precisa de uma certidão de nascimento para a pessoa");
+            }
+            this.Nome = nome;
         }
 
         public Pessoa(string nome)
         {
-            this.nome = nome;
+            if (nome == null)
+            {
+                throw new ArgumentNullException("Precisa de um nome para a pessoa");
+            } 
+            this.Nome = nome;
         }
     }
 }
