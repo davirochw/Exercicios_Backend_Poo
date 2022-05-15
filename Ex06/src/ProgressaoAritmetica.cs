@@ -15,9 +15,33 @@ namespace Ex06.src
 
         public ProgressaoAritmetica(int primeiro, int razao) : base(primeiro, razao)
         {
-            Primeiro = primeiro;
-            Razao = razao;
         }
 
+        public override int ProximoValor { get { return PA[PA.Count - 1] + Razao; } }
+
+        public override int TermoAt(int posicao)
+        {
+            int r = Razao;
+            int n = posicao - 1;
+
+            if (PA.Count == 0)
+            {
+                PA.Add(Primeiro);
+                return Primeiro;
+            }
+            else
+            {
+                PA.Add(PA[PA.Count - 1] + Razao);
+                return PA.Count - 1 + Razao;
+            }
+        }
+
+        public override void Reinicializar()
+        {
+            if (PA.Count != 0)
+            {
+                PA.Clear();
+            }
+        }
     }
 }

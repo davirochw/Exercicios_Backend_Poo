@@ -30,7 +30,57 @@ namespace Ex01.src
                     }
                     else
                     {
-                        return true;
+                        int[] v1 = new int[9];
+                        int[] v2 = new int[10];
+                        int soma = 0;
+
+                        for (int i = 0; i < 9; i++)
+                        {
+                            v1[i] = Convert.ToInt32(cpf[i].ToString());
+                            soma += v1[i] * (10 - i);
+                        }
+
+                        int resto = soma % 11;
+                        int j = 0;
+
+                        if (resto < 2)
+                        {
+                            j = 0;
+                        }
+                        else
+                        {
+                            j = 11 - resto;
+                        }
+
+                        soma = 0;
+
+                        for (int i = 0; i < 10; i++)
+                        {
+                            v2[i] = Convert.ToInt32(cpf[i].ToString());
+                            soma += v2[i] * (11 - i);
+                        }
+
+                        resto = soma % 11;
+                        int k = 0;
+
+                        if (resto < 2)
+                        {
+                            k = 0;
+                        }
+                        else
+                        {
+                            k = 11 - resto;
+                        }
+
+                        if (j == Convert.ToInt32(cpf[9].ToString()) && k == Convert.ToInt32(cpf[10].ToString()))
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("CPF inválido!");
+                            return false;
+                        }
                     }
                 }
                 catch (Exception)

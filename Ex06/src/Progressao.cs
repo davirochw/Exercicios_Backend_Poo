@@ -19,14 +19,8 @@ namespace Ex06.src
             Razao = razao;
         }
 
-        public abstract int TermoAt(int posicao)
-        {
-            return Primeiro + Razao * posicao;
-        }
+        public abstract int TermoAt(int posicao);
 
-        public void Reinicializar()
-        {
-            Primeiro = 0;
-        }
+        public abstract void Reinicializar();
     }
 }
